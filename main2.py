@@ -16,7 +16,7 @@ colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 print(0)
 
-client = CClient('192.168.1.85', 1500)
+client = CClient('XXX.XXX.X.XX', 1500)
 client.EXT_ConnectToServer()
 
 #cap = cv2.VideoCapture(0) #insert 0 if using PC camera

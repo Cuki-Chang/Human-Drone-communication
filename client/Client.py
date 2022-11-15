@@ -21,7 +21,7 @@ class CClient:
 
         connectString = 'tcp://' + self.m_ip + ':' + str(self.m_port)
 
-		#m_socket.connect("tcp://192.168.1.17:1500");
+		
         print ('Connecting to server: ' + connectString + '...')
         self.m_socket.connect(connectString)
 

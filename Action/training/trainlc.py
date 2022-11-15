@@ -112,7 +112,7 @@ def plot_confusion_matrix(cm, classes,
     plt.xlabel('Predicted label')
 
 # load data
-raw_data = pd.read_csv('labeldata10.csv', header=0)
+raw_data = pd.read_csv('your csv dataset', header=0)
 dataset = raw_data.values
 print(dataset)
 
@@ -121,12 +121,12 @@ Y = dataset[0:12500, 36]
 
 print(X)
 print(Y)
-# 将类别编码为数字
+
 
 
 encoder_Y =[0]*1000 + [1]*1100 + [2]*1000 + [3]*1000 + [4]*1100 + [5]*1100 + [6]*1500 + [7]*1700+ [8]*1500+ [9]*1500
 print(encoder_Y)
-# one hot 编码
+# one hot 
 dummy_Y = np_utils.to_categorical(encoder_Y)
 print(dummy_Y)
 X_train, X_test, Y_train, Y_test = train_test_split(X,dummy_Y, test_size=0.1, random_state=9)

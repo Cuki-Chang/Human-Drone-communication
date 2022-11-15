@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # Read dataset from command line
     key_word = "--dataset"
     parser = argparse.ArgumentParser()
-    parser.add_argument(key_word, required=False, default='skeleton_rawlc - Copy.csv')
+    parser.add_argument(key_word, required=False, default='your csv dataset')
     input = parser.parse_args().dataset
 
     # Loading training data
@@ -40,7 +40,7 @@ if __name__ == "__main__":
      #   X_pp.append(dpp.pose_normalization(X[i]))
     #X_pp = np.array(X_pp)
 
-    X = dataset[0:12501, 0:36].astype(float)  # 忽略run数据
+    X = dataset[0:12501, 0:36].astype(float)  # 
     Y = dataset[0:12501, 36]
 
     # Encoder the class label to number
@@ -85,4 +85,4 @@ if __name__ == "__main__":
     model.fit(X_train, Y_train, batch_size=32, epochs=50, verbose=2, validation_data=(X_test, Y_test))
 
     # Save the trained model
-    model.save('feiyu.h5')
+    model.save('model.h5')

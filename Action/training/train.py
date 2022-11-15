@@ -153,7 +153,7 @@ def plot_confusion_matrix(cm, classes,
     plt.xlabel('Predicted label')
 
 # load data
-raw_data = pd.read_csv('stupied2.csv', header=0)
+raw_data = pd.read_csv('your csv datasets', header=0)
 dataset = raw_data.values
 print(dataset)
 
@@ -165,7 +165,7 @@ Y = dataset[0:9869, 36]
 
 print(X)
 print(Y)
-# 将类别编码为数字
+
 
 #encoder_Y = [0]*744 + [1]*722 + [2]*668 + [3]*692
 #encoder_Y = [0]*1100 + [1]*2176 + [2]*1170 + [3]*2030 + [4]*1200
@@ -179,7 +179,7 @@ print(Y)
 
 encoder_Y = [0]*784 + [1]*583 + [2]*711 + [3]*907 + [4]*1623+ [5]*1994+ [6]*722+ [7]*942+ [8]*962+ [9]*641
 print(encoder_Y)
-# one hot 编码
+# one hot 
 dummy_Y = np_utils.to_categorical(encoder_Y)
 print(dummy_Y)
 X_train, X_test, Y_train, Y_test = train_test_split(X,dummy_Y, test_size=0.1, random_state=9)
@@ -229,7 +229,7 @@ plt.show()
 
 model.summary()
 his.loss_plot('epoch')
-model.save('improve21216.h5')
+model.save('model.h5')
 print("Saved model to disk")
 
 
@@ -277,7 +277,7 @@ plt.show()
 
 # # test
 
-model = load_model('improve21316.h5')
+model = load_model('model.h5')
 
 test_input = [0.43, 0.46, 0.43, 0.52, 0.4, 0.52, 0.39, 0.61, 0.4,
               0.67, 0.46, 0.52, 0.46, 0.61, 0.46, 0.67, 0.42, 0.67,

@@ -1,9 +1,11 @@
 # Human-Drone-communication
 
 #### This is the code implementation of the papers titled:
-"Real-Time Human Detection and Gesture Recognition for On-Board UAV Rescue" https://www.mdpi.com/1424-8220/21/6/2180
+"Real-Time Human Detection and Gesture Recognition for On-Board UAV Rescue" 
+https://www.mdpi.com/1424-8220/21/6/2180
 
-“Gesture Recognition for UAV-based Rescue Operation based on Deep Learning” https://www.scitepress.org/PublicationsDetail.aspx?ID=mi8ytkebB0w=&t=1 
+“Gesture Recognition for UAV-based Rescue Operation based on Deep Learning” 
+https://www.scitepress.org/PublicationsDetail.aspx?ID=mi8ytkebB0w=&t=1 
 
 ### Citations
 #### Please cite us if you use our programs.
